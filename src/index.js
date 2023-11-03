@@ -32,5 +32,5 @@ const data = {
         emoji: "💬",
       },
     ],
-    footer: "Made with Love on Argentina",
+    footer: "Made with Love on Argentina ",
   };
