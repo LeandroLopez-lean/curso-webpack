@@ -1,3 +1,8 @@
+
+import fotoPerfil from '../src/img/foto-perfil.png';
+
+<img class="rounded-lg w-48" src={fotoPerfil} alt="__Leandro Lopez" />
+
 const $links = document.getElementById('links');
 const $name = document.querySelector('h1');
 
