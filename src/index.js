@@ -2,7 +2,7 @@ const $links = document.getElementById('links');
 const $name = document.querySelector('h1');
 
 const data = {
-   /*  name: "Lean Lopez",
+    name: "Lean Lopez",
     nickname: "Lean",
     description: "...",
     avatar: "...",
@@ -32,7 +32,7 @@ const data = {
         emoji: "💬",
       },
     ],
-    footer: "Made with Love on Argentina ", */
+    footer: "Made with Love on Argentina ",
   };
 
 const main = () => {
