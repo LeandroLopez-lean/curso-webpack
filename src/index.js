@@ -1,17 +1,19 @@
-
+/* 
 import fotoPerfil from '../src/img/foto-perfil.png';
 
 <img class="rounded-lg w-48" src={fotoPerfil} alt="__Leandro Lopez" />
-
+ */
 const $links = document.getElementById('links');
 const $name = document.querySelector('h1');
+const $img = document.querySelector('img');
+
 
 const data = {
     name: "Lean Lopez",
     nickname: "Lean",
     description: "...",
     avatar: "...",
-    social: [
+   /*  social: [
       {
         name: "twitter",
         url: "https://twitter.com/",
@@ -22,6 +24,11 @@ const data = {
         url: "https://instagram.com/",
         username: "",
       },
+    ], */
+    img: [
+      {
+         src: "../src/img/foto-perfil.png",
+      }
     ],
     links: [
       {
