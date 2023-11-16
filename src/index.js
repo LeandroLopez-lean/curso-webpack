@@ -5,7 +5,6 @@ import fotoPerfil from '../src/img/foto-perfil.png';
  */
 const $links = document.getElementById('links');
 const $name = document.querySelector('h1');
-const $img = document.querySelector('img');
 
 
 const data = {
