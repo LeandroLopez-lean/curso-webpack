@@ -1,5 +1,5 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin'); 
 
 module.exports = {
     entry: './src/index.js',
@@ -7,8 +7,8 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: 'main.js'
     },
-    resolve: {
-        extensions: ['.js']
+     resolve: {
+        extensions: ['.js', '.png']
     },
     module: {
         rules: [
@@ -20,6 +20,16 @@ module.exports = {
                 }
                 
             },
+            {
+                test: /\.png$/,
+                use: {
+                    loader: 'file-loader',
+                    options: {
+                        name: '[name].[ext]',
+                        outputPath: 'img/'
+                    }
+                }
+            }
         ]
     },
     plugins: [
@@ -29,4 +39,4 @@ module.exports = {
             filename: './index.html'
         })
     ]
-}
+} 

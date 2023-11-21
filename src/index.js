@@ -1,34 +1,13 @@
-/* 
-import fotoPerfil from '../src/img/foto-perfil.png';
-
-<img class="rounded-lg w-48" src={fotoPerfil} alt="__Leandro Lopez" />
- */
 const $links = document.getElementById('links');
 const $name = document.querySelector('h1');
+const $avatar = document.querySelector('img');
 
 
 const data = {
     name: "Lean Lopez",
     nickname: "Lean",
     description: "...",
-    avatar: "...",
-   /*  social: [
-      {
-        name: "twitter",
-        url: "https://twitter.com/",
-        username: "",
-      },
-      {
-        name: "instagram",
-        url: "https://instagram.com/",
-        username: "",
-      },
-    ], */
-    img: [
-      {
-         src: "../src/img/foto-perfil.png",
-      }
-    ],
+    avatar: "img/foto-perfil",
     links: [
       {
         name: "blog",
@@ -43,7 +22,6 @@ const data = {
         emoji: "💬",
       },
     ],
-    footer: "Made with Love on Argentina ",
   };
 
 const main = () => {
@@ -58,6 +36,10 @@ const main = () => {
     newItem.innerHTML = links;
     $links.appendChild(newItem);
     $name.appendChild(name);
-}
+    $img.appendChild(img);
 
+
+
+}
+ 
 main();
