@@ -14,19 +14,19 @@ module.exports = {
         rules: [
             {
                 test: /\.js?$/,
-                exclude: /node_module/,
+                exclude: /node_modules/,
                 use: {
                     loader: 'babel-loader'
                 }
                 
             },
             {
-                test: /\.png$/,
+                test: /\.png$/i,
                 use: {
                     loader: 'file-loader',
                     options: {
-                        name: '[name].[ext]',
-                        outputPath: 'img/'
+                        outputPath: './images',
+                        name: '[name].[ext]'
                     }
                 }
             }
