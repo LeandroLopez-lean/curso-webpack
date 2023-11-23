@@ -1,13 +1,13 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin'); 
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: './src/index.js',
-    output: { 
+    output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'main.js'
     },
-     resolve: {
+    resolve: {
         extensions: ['.js', '.png']
     },
     module: {
@@ -18,10 +18,10 @@ module.exports = {
                 use: {
                     loader: 'babel-loader'
                 }
-                
+
             },
             {
-                test: /\.png$/i,
+                test: /\.png$/,
                 use: {
                     loader: 'file-loader',
                     options: {

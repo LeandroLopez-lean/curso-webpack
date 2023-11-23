@@ -2,14 +2,14 @@ import fotoPerfil from "./img/foto-perfil.png";
 
 const $links = document.getElementById('links');
 const $name = document.querySelector('h1');
-const $img = document.getElementById('img');
+const $fotoPerfil = document.querySelector('img');
 
 
 const data = {
   name: "Lean Lopez",
   nickname: "Lean",
   description: "...",
-  avatar: "img",
+  avatar: "fotoPerfil",
   links: [
     {
       name: "blog",
@@ -40,7 +40,9 @@ const main = () => {
   $name.appendChild(name);
 
   let img = document.createElement("img");
-  $img.appendChild(img);
+  img.src = data.avatar;
+  img.alt = "";
+  $img.appendChild(img.src);
 
 
 
