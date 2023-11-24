@@ -3,12 +3,13 @@ import fotoPerfil from "./img/foto-perfil.png";
 const $links = document.getElementById('links');
 const $name = document.querySelector('h1');
 const $fotoPerfil = document.getElementById('imagen');
+const $text = document.getElementById('text');
 
 
 const data = {
   name: "Lean Lopez",
   nickname: "Lean",
-  description: "...",
+  description: "Esto es webpack. me costo mucho colocar la imagen... ",
   avatar: fotoPerfil,
   links: [
     {
@@ -39,10 +40,9 @@ const main = () => {
   $links.appendChild(newItem);
   $name.appendChild(name);
 
-  $fotoPerfil.src = data.avatar;
+  $fotoPerfil.src = fotoPerfil;
   $fotoPerfil.alt = "tuyu";
-
-
+  $text.textContent = data.description;
 
 }
 
